@@ -1,0 +1,4 @@
+library(data.table)
+# data.table 1.14.8 using 6 threads (see ?getDTthreads).  Latest news: r-datatable.com
+data_to_write_out <- as.data.frame(as.matrix(Seurat object@meta.data))
+fwrite(x = data_to_write_out, file = "Out_put_file_name.csv")
